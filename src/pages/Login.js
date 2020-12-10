@@ -16,7 +16,7 @@ function Login() {
                 <Card.Text>
                 In this page you will be abble to live your comments about your favourite artists
                 </Card.Text>
-                <Button href= {`https://connect.deezer.com/oauth/auth.php?response_type=token&app_id=${process.env.REACT_APP_APP_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&perms=basic_access,email`} size="lg" variant="outline-primary">Sign In</Button>
+                <Button href= {`https://connect.deezer.com/oauth/auth.php?response_type=token&app_id=${process.env.REACT_APP_APP_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&perms=basic_access,offline_access`} size="lg" variant="outline-primary">Sign In</Button>
             </Card.Body>
         </Card>
     </Container>

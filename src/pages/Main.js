@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import SearchForm from '../components/SearchForm';
 import ArtistInfo from '../components/ArtistInfo';
+import Comments from '../components/Comments';
 
 function Main (props) {
     const [artist, setArtist] = useState("")
@@ -14,7 +15,18 @@ function Main (props) {
   return (
     <Container className="card mt-5 justify-content-center">
         <SearchForm setArtist={setArtist}/>
-        {artist !== "" && <ArtistInfo artist={artist}/>}
+        {
+          artist !== "" 
+            && 
+          <Row className="justify-content-center">
+            <Col md={10} lg={5}>
+              <ArtistInfo artist={artist}/>
+            </Col>
+            <Col md={10} lg={7}>
+              <Comments artist={artist}/>
+            </Col>
+          </Row>
+        }
     </Container>
   );
 }

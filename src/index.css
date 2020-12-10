@@ -22,3 +22,8 @@ code {
 .card {
   background-color: rgba(0, 0, 0, 0.685) !important;
 }
+
+.comment {
+  background-color: rgba(0, 34, 78, 0.685) !important;
+  border: 1px solid white !important;
+}
