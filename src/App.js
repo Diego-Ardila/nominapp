@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import Axios from 'axios';
 import PrivateRoute from './components/PrivateRoute';
 import Login from './pages/Login';
 import Main from "./pages/Main";
