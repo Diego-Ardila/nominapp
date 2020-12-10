@@ -14,7 +14,7 @@ function Main (props) {
   return (
     <Container className="card mt-5 justify-content-center">
         <SearchForm setArtist={setArtist}/>
-        <ArtistInfo artist={artist}/>
+        {artist !== "" && <ArtistInfo artist={artist}/>}
     </Container>
   );
 }

@@ -19,6 +19,7 @@ function SearchForm ({setArtist}) {
             method:"GET",
             url: `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist/?q=${values.artist}`,
           }).then(data =>{
+            console.log(data.data.data[0])
             setArtist(data.data.data[0])
             actions.setSubmitting(false)
           }).catch(err =>{
